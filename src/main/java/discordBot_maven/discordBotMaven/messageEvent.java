@@ -23,18 +23,16 @@ public class messageEvent extends ListenerAdapter {
 			String naughtyText = message.getContentDisplay().toLowerCase();
 			MessageChannel channel = event.getChannel();
 				
-			if(naughtyText.contains("fuck") || naughtyText.contains("shit") || naughtyText.contains("ass") || naughtyText.contains("damn")) {
+			if(naughtyText.contains("fuck") || naughtyText.contains("shit") || naughtyText.contains("ass") || naughtyText.contains("damn")) { //Replace with swear file to match against in the future
 				
-				channel.sendMessage("This is a christian server please no swearsies").queue();
+				channel.sendMessage("*CLINK* Add one more to the jar!").queue();
 				
 			}
 			
 			if(eName.equals("wjnewhouse")) {
 				
 				channel.addReactionById(messageID, "E:471815289580027904").queue();
-				//channel.editMessageById(messageID, "I'm a baby waaaaa").queue();
 				
-				//channel.sendMessage("I'll :nut: to that!").queue();
 				
 			}
 			
@@ -47,7 +45,9 @@ public class messageEvent extends ListenerAdapter {
 	public void onMessageUpdate(MessageUpdateEvent event) {
 		
 		if (event.getAuthor().isBot()){
+			
 			return;
+			
 		} else {
 		
 			Message message = event.getMessage();
