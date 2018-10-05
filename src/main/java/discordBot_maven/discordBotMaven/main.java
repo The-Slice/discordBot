@@ -15,8 +15,7 @@ import net.dv8tion.jda.core.entities.MessageChannel;
 
 public class main {
 	public static void main(String[] args) {
-		//Add bot to server: https://discordapp.com/oauth2/authorize?client_id=495741345751629846&scope=bot&permissNDk1NzQxMzQ1NzUxNjI5ODQ2.DpGimg.aq53PYLgfSfzOfyt4DkQFLPMPMY
-		//Token: NDk1NzQxMzQ1NzUxNjI5ODQ2.DpGimg.aq53PYLgfSfzOfyt4DkQFLPMPMY
+		
 		try {
 			JDA api = (JDA) new JDABuilder("NDk1NzQxMzQ1NzUxNjI5ODQ2.DpGimg.aq53PYLgfSfzOfyt4DkQFLPMPMY")
 			.addEventListener(new messageEvent()).build();
