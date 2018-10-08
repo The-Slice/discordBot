@@ -15,7 +15,7 @@ import net.dv8tion.jda.core.events.*;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 public class messageEvent extends ListenerAdapter {
-
+	//Every Sent Message
 	public void onMessageReceived(MessageReceivedEvent event) {
 		if (event.getAuthor().isBot()) {
 			return;
