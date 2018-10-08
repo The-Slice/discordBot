@@ -18,7 +18,7 @@ import net.dv8tion.jda.core.entities.MessageChannel;
 
 public class main {
 	public static void main(String[] args) {
-		
+		//test
 		try {
 			JDA api = (JDA) new JDABuilder("Secret")
 			.addEventListener(new messageEvent()).build();
