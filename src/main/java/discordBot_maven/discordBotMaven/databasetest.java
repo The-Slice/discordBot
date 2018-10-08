@@ -8,6 +8,7 @@ import java.sql.Statement;
 
 public class databasetest {
     public static void main(String[] args) {
+    	//not really needed but keeping for keepsakes
         try {
         	Class.forName("com.mysql.cj.jdbc.Driver");
             // public static Connection getConnection(String url, String user, String password)
