@@ -101,8 +101,8 @@ public class messageEvent extends ListenerAdapter {
 				rset.next();
 				textEdit = rset.getString("message");
 
-				channel.sendMessage(eName + " is trying to gaslight you!").queue();
-				channel.sendMessage("The original message was \"" + textEdit + "\"").queue();
+				channel.sendMessage(eName + " is trying to gaslight you!\nThe original message was \"" + textEdit + "\"").queue();
+				
 
 				connect.close();
 
