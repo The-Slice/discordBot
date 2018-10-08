@@ -1,8 +1,11 @@
 package discordBot_maven.discordBotMaven;
 
+import java.util.List;
+
 import javax.security.auth.login.LoginException;
 import net.dv8tion.jda.*;
 import net.dv8tion.jda.core.*;
+import net.dv8tion.jda.core.entities.Emote;
 //import net.dv8tion.jda.core.AccountType;
 //import net.dv8tion.jda.core.JDA;
 //import net.dv8tion.jda.core.JDABuilder;
@@ -17,10 +20,9 @@ public class main {
 	public static void main(String[] args) {
 		
 		try {
-			JDA api = (JDA) new JDABuilder("NDk1NzQxMzQ1NzUxNjI5ODQ2.DpGimg.aq53PYLgfSfzOfyt4DkQFLPMPMY")
+			JDA api = (JDA) new JDABuilder("Secret")
 			.addEventListener(new messageEvent()).build();
 			api.awaitReady();
-			
 			
 			
 		} catch (LoginException e) {
