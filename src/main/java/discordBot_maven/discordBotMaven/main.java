@@ -20,7 +20,7 @@ public class main {
 	public static void main(String[] args) {
 		//test
 		try {
-			JDA api = (JDA) new JDABuilder("Secret")
+			JDA api = (JDA) new JDABuilder("${{secret.SECRET_KEY}}")
 			.addEventListener(new messageEvent()).build();
 			api.awaitReady();
 			
