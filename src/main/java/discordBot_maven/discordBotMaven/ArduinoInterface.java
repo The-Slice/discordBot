@@ -31,7 +31,7 @@ public class ArduinoInterface extends JArduino implements Pitches {
 	}
 
 	public ArduinoInterface() {
-		super("COM3");
+		super("COM4");
 	}
 
 	protected void setup() {
